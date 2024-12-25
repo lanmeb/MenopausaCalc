@@ -1,3 +1,14 @@
+document.addEventListener('mousemove', function(e) {
+    let particle = document.createElement('div');
+    particle.className = 'particle';
+    particle.style.left = `${e.clientX}px`;
+    particle.style.top = `${e.clientY}px`;
+    document.body.appendChild(particle);
+
+    setTimeout(function() {
+        particle.remove();
+    }, 1000); // Remove a partícula após 1 segundo
+});
 const idadeMinima = 33;
 const idadeMaxima = 41;
 
