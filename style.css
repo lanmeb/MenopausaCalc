@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    background-color: #0edabe;
+    background-color: #570437;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -18,27 +18,27 @@ body {
 }
 
 h1 {
-    color: #084e23;
+    color: #d82995;
 }
 
 label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #084e23
+    color: #f307b8;
 }
 
 input[type="number"] {
     width: 50%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #f307b8;
     border-radius: 4px;
 }
 
 button {
-    background-color: #023f37;
-    color: #fff;
+    background-color: #f307b8;
+    color: #570437;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -46,14 +46,14 @@ button {
 }
 
 button:hover {
-    background-color: #b0b300;
+    background-color: #d82995;
 }
 
 .rodape__texto{
     color: transparent;
   }
 .rodape__texto:hover{
-    color: #023f37;
+    color: #f307b8;
     text-align: center;
     font-weight: 400;
 }
@@ -61,5 +61,36 @@ button:hover {
 #resultado {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #084e23;
+    color: #f307b8;
 }
+/**/
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body {
+    cursor: none; /* Esconde o cursor padrão */
+}
+
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #d82995;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 5px #DA0789, 0 0 10px #DA0789, 0 0 20px #DA0789, 0 0 40px #DA0789, 0 0 80px #DA0789;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes fadeOut {
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+
